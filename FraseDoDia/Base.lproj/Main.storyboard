@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FraseDoDia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CGO-ph-gbJ">
+                                <rect key="frame" x="67.666666666666686" y="64" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gYu-zA-PyS"/>
+                                    <constraint firstAttribute="width" constant="240" id="tlD-Z3-ave"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-aA-WCQ">
+                                <rect key="frame" x="103" y="242" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.32941177490000001" green="0.52549022440000004" blue="0.098039209840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="CdP-yY-a71"/>
+                                    <constraint firstAttribute="height" constant="30" id="G2v-0s-u6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Nova frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="novaFrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE5-Uh-z4c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se você traçar metas absurdamente altas e falhar, seu fracos será muito melhor que o sucesso de todos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-5l-xQw">
+                                <rect key="frame" x="20" y="350" width="335" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D6I-EI-B2H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="ppx-zD-jLH">
+                                <rect key="frame" x="20" y="282" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Pxf-sx-AKo"/>
+                                    <constraint firstAttribute="height" constant="60" id="oYl-3i-HGi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="1Y9-vo-vg6">
+                                <rect key="frame" x="295" y="458" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WpB-1L-4JA"/>
+                                    <constraint firstAttribute="height" constant="60" id="qQh-6a-gww"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Y9-vo-vg6" firstAttribute="top" secondItem="i0K-5l-xQw" secondAttribute="bottom" constant="8" id="2H6-ow-yga"/>
+                            <constraint firstItem="CGO-ph-gbJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6v2-Di-EuG"/>
+                            <constraint firstItem="CGO-ph-gbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Avi-oi-mru"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Y9-vo-vg6" secondAttribute="trailing" constant="20" id="FFl-Xk-ngo"/>
+                            <constraint firstItem="mPD-aA-WCQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5q-7X-uFw"/>
+                            <constraint firstItem="ppx-zD-jLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PCb-Nd-c5d"/>
+                            <constraint firstItem="i0K-5l-xQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cH8-ux-6Dd"/>
+                            <constraint firstItem="mPD-aA-WCQ" firstAttribute="top" secondItem="CGO-ph-gbJ" secondAttribute="bottom" constant="50" id="e0w-9D-TPt"/>
+                            <constraint firstItem="i0K-5l-xQw" firstAttribute="top" secondItem="ppx-zD-jLH" secondAttribute="bottom" constant="8" id="kYd-zA-Blf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0K-5l-xQw" secondAttribute="trailing" constant="20" id="ner-jy-Ebk"/>
+                            <constraint firstItem="ppx-zD-jLH" firstAttribute="top" secondItem="CGO-ph-gbJ" secondAttribute="bottom" constant="90" id="qm4-1E-XIT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="legendaResultado" destination="i0K-5l-xQw" id="RGz-v8-Bs9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="57" height="54"/>
+        <image name="aspas-esquerda" width="56" height="55"/>
+        <image name="logo" width="253" height="140"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
